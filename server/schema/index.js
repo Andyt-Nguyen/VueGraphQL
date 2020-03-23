@@ -12,6 +12,7 @@ const BASE_URL = 'http://localhost:3000';
 const UserType = new GraphQLObjectType({
 	name: 'User',
 	fields: () => ({
+		id: { type: GraphQLString },
 		firstName: { type: GraphQLString },
 		lastName: { type: GraphQLString },
 		company: {
