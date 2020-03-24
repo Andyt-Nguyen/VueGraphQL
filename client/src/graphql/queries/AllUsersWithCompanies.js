@@ -1,10 +1,14 @@
 import gql from 'graphql-tag';
 
 export default gql`
-	query allCompanies {
-		companies {
+	{
+		users {
 			id
-			name
+			firstName
+			lastName
+			company {
+				name
+			}
 		}
 	}
 `;
